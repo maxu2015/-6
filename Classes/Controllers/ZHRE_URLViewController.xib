@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZHRE_URLViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webload" destination="RjQ-22-5IA" id="clG-Qb-YDh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jds-4H-mUr">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="21J-NL-IGk">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="展恒推荐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGo-8v-b3C">
+                            <rect key="frame" x="150" y="22" width="115" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="115" id="XDd-PI-Kpw"/>
+                                <constraint firstAttribute="height" constant="38" id="wDA-H9-3Iw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ien-5o-uI9">
+                            <rect key="frame" x="0.0" y="21" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="hRN-wO-adQ"/>
+                                <constraint firstAttribute="height" constant="44" id="qHY-yq-DNH"/>
+                            </constraints>
+                            <state key="normal" image="返回按钮.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pressBackBtn:" destination="-1" eventType="touchUpInside" id="qhz-Un-nlP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="lGo-8v-b3C" firstAttribute="top" secondItem="jds-4H-mUr" secondAttribute="top" constant="22" id="7AU-NF-qgs"/>
+                        <constraint firstItem="21J-NL-IGk" firstAttribute="top" secondItem="jds-4H-mUr" secondAttribute="top" id="7MC-Zt-CVg"/>
+                        <constraint firstItem="ien-5o-uI9" firstAttribute="leading" secondItem="jds-4H-mUr" secondAttribute="leading" id="CQW-kT-LHB"/>
+                        <constraint firstItem="ien-5o-uI9" firstAttribute="top" secondItem="jds-4H-mUr" secondAttribute="top" constant="21" id="H1E-TN-Rlc"/>
+                        <constraint firstAttribute="height" constant="64" id="OtR-F1-PFX"/>
+                        <constraint firstAttribute="trailing" secondItem="21J-NL-IGk" secondAttribute="trailing" id="QRL-jA-Ak1"/>
+                        <constraint firstAttribute="bottom" secondItem="21J-NL-IGk" secondAttribute="bottom" id="e1S-HI-jW1"/>
+                        <constraint firstItem="21J-NL-IGk" firstAttribute="leading" secondItem="jds-4H-mUr" secondAttribute="leading" id="qNb-fj-PaG"/>
+                        <constraint firstItem="21J-NL-IGk" firstAttribute="centerX" secondItem="lGo-8v-b3C" secondAttribute="centerX" id="zJA-64-z58"/>
+                    </constraints>
+                </view>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RjQ-22-5IA">
+                    <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RjQ-22-5IA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KF8-QW-an9"/>
+                <constraint firstAttribute="bottom" secondItem="RjQ-22-5IA" secondAttribute="bottom" id="Lnc-Xh-4Ti"/>
+                <constraint firstItem="RjQ-22-5IA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="YeZ-pk-R6c"/>
+                <constraint firstAttribute="trailing" secondItem="jds-4H-mUr" secondAttribute="trailing" id="bAz-iE-T5C"/>
+                <constraint firstAttribute="trailing" secondItem="RjQ-22-5IA" secondAttribute="trailing" id="dma-04-f7I"/>
+                <constraint firstItem="jds-4H-mUr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fXV-CK-ROH"/>
+                <constraint firstItem="jds-4H-mUr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iSk-4T-MiG"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar.png" width="320" height="44"/>
+        <image name="返回按钮.png" width="19" height="19"/>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsDetalViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMX-ea-Gi6">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ren-6M-tTq">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="rn6-Rf-he6"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awq-ku-Gah">
+                            <rect key="frame" x="0.0" y="21" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="6Cu-kI-tYi"/>
+                                <constraint firstAttribute="height" constant="44" id="p5s-7L-e0w"/>
+                            </constraints>
+                            <state key="normal" image="返回按钮.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="returnButtonClick:" destination="-1" eventType="touchUpInside" id="hvN-7K-Mhg"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资讯详情" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKF-Gy-A0I">
+                            <rect key="frame" x="53" y="24" width="218" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="Tns-vC-mOS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAH-cc-oXl">
+                            <rect key="frame" x="273" y="21" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="0c2-oZ-a49"/>
+                                <constraint firstAttribute="width" constant="45" id="S5q-My-S6L"/>
+                            </constraints>
+                            <state key="normal" image="分享.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="shareButtonClick:" destination="-1" eventType="touchUpInside" id="ZNs-NW-qvU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.48165567040000001" green="1" blue="0.93576180710000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="YAH-cc-oXl" firstAttribute="top" secondItem="oMX-ea-Gi6" secondAttribute="top" constant="21" id="8EQ-ka-jvM"/>
+                        <constraint firstItem="MKF-Gy-A0I" firstAttribute="top" secondItem="oMX-ea-Gi6" secondAttribute="top" constant="24" id="AR0-0C-Li6"/>
+                        <constraint firstItem="Awq-ku-Gah" firstAttribute="leading" secondItem="Ren-6M-tTq" secondAttribute="leading" id="BBo-z0-pYV"/>
+                        <constraint firstItem="Awq-ku-Gah" firstAttribute="top" secondItem="oMX-ea-Gi6" secondAttribute="top" constant="21" id="OYZ-C0-GdN"/>
+                        <constraint firstAttribute="trailing" secondItem="Ren-6M-tTq" secondAttribute="trailing" id="Pq2-2v-SVV"/>
+                        <constraint firstItem="Awq-ku-Gah" firstAttribute="leading" secondItem="oMX-ea-Gi6" secondAttribute="leading" id="dLP-rc-lke"/>
+                        <constraint firstAttribute="trailing" secondItem="YAH-cc-oXl" secondAttribute="trailing" constant="2" id="fCK-1g-73p"/>
+                        <constraint firstItem="YAH-cc-oXl" firstAttribute="leading" secondItem="MKF-Gy-A0I" secondAttribute="trailing" constant="2" id="hMT-kr-oT2"/>
+                        <constraint firstAttribute="height" constant="64" id="igQ-Fo-V4g"/>
+                        <constraint firstItem="MKF-Gy-A0I" firstAttribute="leading" secondItem="Awq-ku-Gah" secondAttribute="trailing" constant="8" id="l85-n6-PcD"/>
+                        <constraint firstItem="Ren-6M-tTq" firstAttribute="top" secondItem="oMX-ea-Gi6" secondAttribute="top" id="z7n-tE-Kgb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oMX-ea-Gi6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qCM-3S-6zQ"/>
+                <constraint firstAttribute="trailing" secondItem="oMX-ea-Gi6" secondAttribute="trailing" id="rc5-Fi-gig"/>
+                <constraint firstItem="oMX-ea-Gi6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xGe-ys-VwH"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar.png" width="320" height="44"/>
+        <image name="分享.png" width="16" height="19"/>
+        <image name="返回按钮.png" width="19" height="19"/>
+    </resources>
+</document>

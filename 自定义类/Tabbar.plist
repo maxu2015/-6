@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>净值走势</string>
+		<key>image</key>
+		<string>02b单支精品_03</string>
+		<key>imagepress</key>
+		<string>02b单支精品_选中状态_03</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>基金概况</string>
+		<key>image</key>
+		<string>02b单支精品_05</string>
+		<key>imagepress</key>
+		<string>02b单支精品_选中状态_05</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>基金业绩</string>
+		<key>image</key>
+		<string>02b单支精品_07</string>
+		<key>imagepress</key>
+		<string>02b单支精品_选中状态_07</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>持仓分析</string>
+		<key>image</key>
+		<string>02b单支精品_09</string>
+		<key>imagepress</key>
+		<string>02b单支精品_选中状态_09</string>
+	</dict>
+</array>
+</plist>

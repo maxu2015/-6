@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="recommend" id="KGk-i7-Jjw" customClass="HomeREcommendTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Fm-gF-VuS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Fm-gF-VuS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7Qk-64-Tr0"/>
+                    <constraint firstAttribute="trailing" secondItem="4Fm-gF-VuS" secondAttribute="trailing" id="Esp-qh-8cP"/>
+                    <constraint firstItem="4Fm-gF-VuS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YhC-Xd-weg"/>
+                    <constraint firstItem="4Fm-gF-VuS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dy7-l3-T04"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="subImage" destination="4Fm-gF-VuS" id="a1z-9g-b8r"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

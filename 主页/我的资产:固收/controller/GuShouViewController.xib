@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuShouViewController">
+            <connections>
+                <outlet property="dealHistory" destination="gYm-fG-0q4" id="uqW-Wu-Zov"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hhc-dR-nNS">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="XOm-pj-Lwr">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="w4s-aK-Flb"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHj-St-QTp">
+                            <rect key="frame" x="0.0" y="21" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="bU2-aY-8u3"/>
+                                <constraint firstAttribute="height" constant="44" id="w85-dt-trL"/>
+                            </constraints>
+                            <state key="normal" image="返回按钮.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="FanHuiWoDe:" destination="-1" eventType="touchUpInside" id="qiw-q0-URb"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="持有固收" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAm-T4-64K">
+                            <rect key="frame" x="71" y="22" width="273" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="MPz-tQ-P8g"/>
+                                <constraint firstAttribute="width" constant="273" id="WCh-s4-vLH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交易记录" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYm-fG-0q4">
+                            <rect key="frame" x="339" y="24" width="71" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="71" id="Qt0-l4-iw7"/>
+                                <constraint firstAttribute="height" constant="35" id="g8M-gJ-7c7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.39070214256051061" blue="0.095253565859802491" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="PHj-St-QTp" firstAttribute="leading" secondItem="Hhc-dR-nNS" secondAttribute="leading" id="0JY-Vz-AB2"/>
+                        <constraint firstItem="xAm-T4-64K" firstAttribute="centerX" secondItem="XOm-pj-Lwr" secondAttribute="centerX" constant="0.5" id="CnB-Ng-gcz"/>
+                        <constraint firstItem="gYm-fG-0q4" firstAttribute="top" secondItem="Hhc-dR-nNS" secondAttribute="top" constant="24" id="E6Q-gf-Vga"/>
+                        <constraint firstItem="PHj-St-QTp" firstAttribute="top" secondItem="Hhc-dR-nNS" secondAttribute="top" constant="21" id="Qcd-ON-oDd"/>
+                        <constraint firstAttribute="trailing" secondItem="gYm-fG-0q4" secondAttribute="trailing" constant="4" id="SI5-bm-Swf"/>
+                        <constraint firstAttribute="height" constant="64" id="TNU-aO-bnp"/>
+                        <constraint firstAttribute="trailing" secondItem="XOm-pj-Lwr" secondAttribute="trailing" id="Zb7-eC-S24"/>
+                        <constraint firstItem="XOm-pj-Lwr" firstAttribute="top" secondItem="Hhc-dR-nNS" secondAttribute="top" id="cnO-6k-mkX"/>
+                        <constraint firstItem="xAm-T4-64K" firstAttribute="top" secondItem="Hhc-dR-nNS" secondAttribute="top" constant="22" id="hC2-NW-s8o"/>
+                        <constraint firstItem="XOm-pj-Lwr" firstAttribute="leading" secondItem="Hhc-dR-nNS" secondAttribute="leading" id="t2b-1k-8wm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.9917732007575758" green="0.9917732007575758" blue="0.9917732007575758" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="0.77000000000000002" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Hhc-dR-nNS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9mI-Xx-99p"/>
+                <constraint firstItem="Hhc-dR-nNS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TG5-zB-3aX"/>
+                <constraint firstAttribute="trailing" secondItem="Hhc-dR-nNS" secondAttribute="trailing" id="fwr-3J-X59"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="237" y="217"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar.png" width="320" height="44"/>
+        <image name="返回按钮.png" width="19" height="19"/>
+    </resources>
+</document>

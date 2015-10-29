@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HotFundTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="290" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPG-GV-CAH">
+                        <rect key="frame" x="156" y="7" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="cDx-oP-RpM"/>
+                            <constraint firstAttribute="width" constant="80" id="dCM-6r-K61"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="eWs-BO-2hs"/>
+                            <constraint firstAttribute="height" constant="21" id="rJk-nC-LO2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.82544191919999998" green="0.1770747104" blue="0.1814093427" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NI0-Cf-hye">
+                        <rect key="frame" x="4" y="6" width="48" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="5yq-qG-XNs"/>
+                            <constraint firstAttribute="height" constant="22" id="zJY-OR-fKz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozs-Io-nwG">
+                        <rect key="frame" x="57" y="7" width="94" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="94" id="MR4-F0-aA8"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="UrE-CE-sc4"/>
+                            <constraint firstAttribute="height" constant="22" id="fwG-yJ-rHf"/>
+                            <constraint firstAttribute="width" constant="94" id="mKs-bJ-xYI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73V-xA-Xlo">
+                        <rect key="frame" x="241" y="8" width="45" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="04B-Ce-HD7"/>
+                            <constraint firstAttribute="width" constant="45" id="rDk-6b-IfR"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="button_buy.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="buyFund:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ieX-oY-0r3"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NI0-Cf-hye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="775-Za-bXW"/>
+                    <constraint firstItem="oPG-GV-CAH" firstAttribute="leading" secondItem="Ozs-Io-nwG" secondAttribute="trailing" constant="5" id="AFQ-fK-iK1"/>
+                    <constraint firstItem="Ozs-Io-nwG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="CGv-Tb-OWP"/>
+                    <constraint firstItem="73V-xA-Xlo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Tte-Q9-J51"/>
+                    <constraint firstItem="73V-xA-Xlo" firstAttribute="leading" secondItem="oPG-GV-CAH" secondAttribute="trailing" constant="5" id="cjl-as-nvp"/>
+                    <constraint firstItem="NI0-Cf-hye" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="f2m-xs-FZ5"/>
+                    <constraint firstItem="oPG-GV-CAH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="jLI-Ba-WYL"/>
+                    <constraint firstItem="Ozs-Io-nwG" firstAttribute="leading" secondItem="NI0-Cf-hye" secondAttribute="trailing" constant="5" id="yJn-FY-zUs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fundName" destination="Ozs-Io-nwG" id="WuG-oF-CTL"/>
+                <outlet property="fundNum" destination="NI0-Cf-hye" id="k1r-jq-TOg"/>
+                <outlet property="income" destination="oPG-GV-CAH" id="7km-Kn-56c"/>
+            </connections>
+            <point key="canvasLocation" x="502" y="289"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="button_buy.png" width="80" height="40"/>
+    </resources>
+</document>

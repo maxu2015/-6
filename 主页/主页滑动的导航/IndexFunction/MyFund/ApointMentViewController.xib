@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ApointMentViewController">
+            <connections>
+                <outlet property="AlertTitle" destination="LiQ-cz-deD" id="0vh-iq-WbJ"/>
+                <outlet property="CallNumber" destination="bH2-Av-nR4" id="Usy-X3-IP3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_success.png" translatesAutoresizingMaskIntoConstraints="NO" id="aqN-MJ-BEm">
+                    <rect key="frame" x="260" y="80" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="1fd-tP-rjG"/>
+                        <constraint firstAttribute="width" constant="80" id="n2B-gk-IK9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温馨提示：您已成功预约！工作人员会在1个工作日内与您联系。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiQ-cz-deD">
+                    <rect key="frame" x="174" y="168" width="253" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="01R-pa-gRp"/>
+                        <constraint firstAttribute="width" constant="253" id="DN7-xF-4j5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wp-U7-pOG">
+                    <rect key="frame" x="185" y="332" width="230" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="230" id="bA6-2J-4Ge"/>
+                        <constraint firstAttribute="height" constant="50" id="mTn-n4-XtV"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="button_present_succeed.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sure:" destination="-1" eventType="touchUpInside" id="tpe-m5-M5E"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如有任何问题请联系客服：010－62020088" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bH2-Av-nR4">
+                    <rect key="frame" x="213" y="253" width="174" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="174" id="Ig2-iM-Loz"/>
+                        <constraint firstAttribute="height" constant="72" id="Pvn-hy-AJk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="bH2-Av-nR4" firstAttribute="top" secondItem="LiQ-cz-deD" secondAttribute="bottom" constant="13" id="7pt-tz-xJ1"/>
+                <constraint firstAttribute="centerX" secondItem="bH2-Av-nR4" secondAttribute="centerX" id="BSq-8e-YfO"/>
+                <constraint firstItem="7Wp-U7-pOG" firstAttribute="top" secondItem="bH2-Av-nR4" secondAttribute="bottom" constant="7" id="HST-2Y-tJU"/>
+                <constraint firstItem="LiQ-cz-deD" firstAttribute="top" secondItem="aqN-MJ-BEm" secondAttribute="bottom" constant="8" id="I1F-M3-Bzo"/>
+                <constraint firstItem="aqN-MJ-BEm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="UsW-YS-kT9"/>
+                <constraint firstAttribute="centerX" secondItem="7Wp-U7-pOG" secondAttribute="centerX" id="VLn-w0-ozs"/>
+                <constraint firstAttribute="centerX" secondItem="LiQ-cz-deD" secondAttribute="centerX" id="pat-Te-GxI"/>
+                <constraint firstAttribute="centerX" secondItem="aqN-MJ-BEm" secondAttribute="centerX" id="rHz-wE-4Qa"/>
+            </constraints>
+            <point key="canvasLocation" x="357" y="282"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_present_succeed.png" width="564" height="113"/>
+        <image name="order_success.png" width="150" height="150"/>
+    </resources>
+</document>

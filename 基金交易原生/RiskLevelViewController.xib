@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RiskLevelViewController">
+            <connections>
+                <outlet property="mytextview" destination="5YW-P7-Jc9" id="kwr-kJ-C8q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="C5t-WL-gEe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="J7L-BC-MoH"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zb5-FC-KJb">
+                    <rect key="frame" x="0.0" y="21" width="45" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="dhM-66-t61"/>
+                        <constraint firstAttribute="height" constant="44" id="sBp-uq-coH"/>
+                    </constraints>
+                    <state key="normal" image="返回按钮.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="NacBack:" destination="-1" eventType="touchUpInside" id="oQO-b1-HVw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZY-ay-jOf">
+                    <rect key="frame" x="80" y="508" width="160" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="4Xa-h8-JWT"/>
+                    </constraints>
+                    <state key="normal" title="开始测评" backgroundImage="navBar.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickTestButton:" destination="-1" eventType="touchUpInside" id="hdV-3l-auD"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YW-P7-Jc9">
+                    <rect key="frame" x="0.0" y="65" width="320" height="431"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">您尚未设置个人风险等级,购买基金必须进行个人风险等级评级
+一.设立风险控制系统的目的 
+为了贯彻落实中国证监会发出的《证券投资基金销售适用性指导意见》，把合适的产品卖给合适的投资人，切实保障投资人的权益，我公司特别引进了基金销售适用性方案， 为投资人提供风险承受能力评估服务，通过问卷形式了解投资人的投资目的、投资期限、投资经验、财务状况、短期及长期风险承受水平等信息， 从而对投资人的风险承受能力进行多角度全面化的分析，帮助投资人选择合适的投资产品。 
+请投资者在进行基金投资前认真填写风险承受能力评估问卷，以便获得客观的风险承受能力评价，方便您进行基金投资。 
+二.风险等级划分 
+风险等级分类：激进型、积极型、稳健型、保守型、安逸型 
+每类风格的投资者特征如下： 
+1、激进型 
+激进型投资者：在基金投资中，您通常专注于投资的长期增值，并愿意为此承受较大的风险。短期的投资波动并不会对您造成大的影响，追求超高的回报才是您关注的目标。 
+风险承受能力：高 
+获利期待：高回报率 
+2、积极型 
+稳健型投资者：在基金投资中，您渴望有较高的投资收益，但又不愿承受较大的风险；可以承受一定的投资波动，但是希望自己的投资风险小于市场的整体风险。您有较高的收益目标，且对风险有清醒的认识。 
+风险承受能力：中高 
+获利期待：中高回报率 
+3、稳健型 
+稳健型投资者：在基金投资的过程中，风险较小的情况下获得一定的收益是您主要的投资目的。您通常愿意使本金面临一定的风险，但在做投资决定时，会仔细地对将要面临的风险进行认真的分析。 总体来看，您愿意承受市场的平均风险。 
+风险承受能力：中 
+获利期待：中等回报率 
+4、保守型 
+保守型投资者：稳定是您首要考虑的因素之一。在基金投资中，您希望在保证本金安全的基础上能有一些增值收入。追求较低的风险，对投资回报的要求不是太高。 
+风险承受能力：较低 
+获利期待：稳定的投资收益 
+5、安逸型 
+安逸型投资者：在基金投资过程中，保护本金不受损失和保持资产的流动性是您的首要目标。您对投资的态度是希望投资收益稳定，不愿或不能承担高风险以换取高收益，通常不太在意资金是否有较大增值，追求稳定。 
+有的投资者可能并不认为自己属于安全型一类，但因为年龄或家累的缘故，抗风险能力实际并不强，此时，获取稳定回报应当成为投资的首要考虑。 
+风险承受能力：低 
+获利期待：很稳定的投资收益 </string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="风险评测" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xD4-Lm-O7Z">
+                    <rect key="frame" x="60" y="22" width="200" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="am4-ab-3D3"/>
+                        <constraint firstAttribute="width" constant="200" id="sbL-40-pSD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jZY-ay-jOf" firstAttribute="top" secondItem="5YW-P7-Jc9" secondAttribute="bottom" constant="15" id="2Rt-vd-neG"/>
+                <constraint firstItem="C5t-WL-gEe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3L5-AH-EGY"/>
+                <constraint firstAttribute="trailing" secondItem="C5t-WL-gEe" secondAttribute="trailing" id="4cI-2E-Ita"/>
+                <constraint firstItem="C5t-WL-gEe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9Bo-GT-qQr"/>
+                <constraint firstItem="jZY-ay-jOf" firstAttribute="top" secondItem="5YW-P7-Jc9" secondAttribute="bottom" constant="12" id="9EF-3t-X2H"/>
+                <constraint firstItem="5YW-P7-Jc9" firstAttribute="top" secondItem="Zb5-FC-KJb" secondAttribute="bottom" id="G4v-2S-Q59"/>
+                <constraint firstAttribute="trailing" secondItem="5YW-P7-Jc9" secondAttribute="trailing" id="Odk-jj-kTc"/>
+                <constraint firstItem="5YW-P7-Jc9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QQP-iK-yjp"/>
+                <constraint firstItem="Zb5-FC-KJb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TzD-Lw-p0c"/>
+                <constraint firstItem="Zb5-FC-KJb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="21" id="Xse-u5-OYR"/>
+                <constraint firstItem="jZY-ay-jOf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="80" id="gsZ-5m-rSb"/>
+                <constraint firstItem="xD4-Lm-O7Z" firstAttribute="centerX" secondItem="C5t-WL-gEe" secondAttribute="centerX" id="hX5-fB-KZm"/>
+                <constraint firstItem="xD4-Lm-O7Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="ic2-tk-c6r"/>
+                <constraint firstAttribute="trailing" secondItem="jZY-ay-jOf" secondAttribute="trailing" constant="80" id="nnp-NP-XBE"/>
+                <constraint firstAttribute="bottom" secondItem="jZY-ay-jOf" secondAttribute="bottom" constant="22" id="qII-QS-ba9"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2Rt-vd-neG"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar.png" width="320" height="44"/>
+        <image name="返回按钮.png" width="19" height="19"/>
+    </resources>
+</document>

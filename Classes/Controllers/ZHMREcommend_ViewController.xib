@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZHMREcommend_ViewController">
+            <connections>
+                <outlet property="table" destination="wnJ-0q-bug" id="M9v-aB-Qge"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82a-sX-VD4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="r5a-Bz-deR">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="yEX-SG-JCv"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="展恒推荐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf4-DR-uFC">
+                            <rect key="frame" x="103" y="22" width="115" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="115" id="1L2-Mr-5nr"/>
+                                <constraint firstAttribute="height" constant="38" id="nSp-UM-Ih7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lag-97-Sl8">
+                            <rect key="frame" x="0.0" y="21" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="P06-QS-6DP"/>
+                                <constraint firstAttribute="height" constant="44" id="i8n-Fx-lOk"/>
+                            </constraints>
+                            <state key="normal" image="返回按钮.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pressBackBtn:" destination="-1" eventType="touchUpInside" id="RRT-qK-gyt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="qf4-DR-uFC" firstAttribute="top" secondItem="82a-sX-VD4" secondAttribute="top" constant="22" id="1mi-tA-If4"/>
+                        <constraint firstItem="Lag-97-Sl8" firstAttribute="top" secondItem="82a-sX-VD4" secondAttribute="top" constant="21" id="C4n-PV-YpM"/>
+                        <constraint firstAttribute="trailing" secondItem="r5a-Bz-deR" secondAttribute="trailing" id="Iu6-Ku-hcX"/>
+                        <constraint firstAttribute="height" constant="64" id="LcL-PX-E7N"/>
+                        <constraint firstItem="r5a-Bz-deR" firstAttribute="leading" secondItem="82a-sX-VD4" secondAttribute="leading" id="PIA-Cb-2wJ"/>
+                        <constraint firstItem="qf4-DR-uFC" firstAttribute="centerX" secondItem="r5a-Bz-deR" secondAttribute="centerX" id="VLb-yv-BKs"/>
+                        <constraint firstItem="r5a-Bz-deR" firstAttribute="top" secondItem="82a-sX-VD4" secondAttribute="top" id="ft2-2g-Des"/>
+                        <constraint firstItem="Lag-97-Sl8" firstAttribute="leading" secondItem="82a-sX-VD4" secondAttribute="leading" id="hTH-Ta-j5r"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wnJ-0q-bug">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="25" id="ibh-5l-iY5">
+                        <size key="itemSize" width="300" height="130"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Una-u5-id7"/>
+                        <outlet property="delegate" destination="-1" id="GpF-e5-awC"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="82a-sX-VD4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8ea-ov-rgU"/>
+                <constraint firstItem="wnJ-0q-bug" firstAttribute="top" secondItem="82a-sX-VD4" secondAttribute="bottom" id="Btn-jm-Iuy"/>
+                <constraint firstAttribute="bottom" secondItem="wnJ-0q-bug" secondAttribute="bottom" id="SGV-u6-el3"/>
+                <constraint firstAttribute="trailing" secondItem="82a-sX-VD4" secondAttribute="trailing" id="aHH-g8-Qnx"/>
+                <constraint firstItem="82a-sX-VD4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kdl-3V-z3a"/>
+                <constraint firstItem="wnJ-0q-bug" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pRO-oD-Tio"/>
+                <constraint firstAttribute="trailing" secondItem="wnJ-0q-bug" secondAttribute="trailing" id="vOL-om-kci"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="342" y="368"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar.png" width="320" height="44"/>
+        <image name="返回按钮.png" width="19" height="19"/>
+    </resources>
+</document>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <title>关于我们</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .top_logo {
+        display: block;
+        width: 100%;
+    }
+    .main {
+        margin: 10px 3.125%;
+        padding-bottom: 10px;
+        border: 1px solid #d4d4d4;
+        border-radius: 10px;
+    }
+    .title {
+        height: 58px;
+        background: url(images/2_05.png) no-repeat 0 0;
+        background-size: 100%;
+        line-height: 58px;
+        color: white;
+        text-indent: 1em;
+        font-size: 20px;
+    }
+    .con {
+        min-height: 50px;
+        margin: 0px 12px;
+        padding: 10px 0;
+        border-bottom: 1px solid #d4d4d4;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .con:last-child {
+        border-bottom: none;
+    }
+    .main2 .con {
+        text-indent: 2em;
+    }
+    .btn {
+        display: block;
+        margin: 10px 3.125% 40px;
+        border-radius: 10px;
+        background: #e53b2e;
+        line-height: 50px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+    }
+    </style>
+</head>
+
+<body>
+    <img src='images/2_02.png' class='top_logo' />
+    <div class='main'>
+        <div class='title'>关于展恒基金网</div>
+        <div class='con'>“展恒基金网V3.2.1”是展恒理财专为投资者提供金融产品查询、交易服务的应用软件App。</div>
+        <div class='con'>我们旨在为您提供严格的金融产品筛选服务，为您筛选精品，推荐精品，同时为您提供随时随地的交易服务和及时的财富资讯！</div>
+        <div class='con'>展恒点财通会员，买基金终身免申购费，展恒集11年专业研究经验，推荐值得信赖！</div>
+    </div>
+    <div class='main main2'>
+        <div class='title'>关于展恒</div>
+        <div class='con'>展恒理财成立于2004年，是国内首批独立财富管理机构。在十年的财富管理道路上，展恒始终秉承"专业、独立、个性化"的服务宗旨，将"风险管理"置于服务客户和发展业务的第一要务，通过坚持"风险控制"、"面对面沟通"、"长期资产配置"的基本理念，在严酷的市场环境下经受住了重重考验，赢得了客户的认可和支持。</div>
+        <div class='con'>2011年获得优点资本（VantagePoint）的注资，公司的发展迈上了新的台阶，迎来了更广阔的发展空间。2012年，展恒成为北京首批经证监会核准取得独立基金销售机构牌照的第三方理财机构。2014年，展恒旗下的资产管理平台弘酬投资获得中国证券投资基金业协会颁发的私募基金管理人牌照。</div>
+        <div class='con'>展为创新之本，恒则基业长青。在低头走路、稳健发展的过程中，展恒一直不忘抬头看路，并把视野投向国际市场。2013年，展恒率先将发达国家成熟的投资顾问模式引入国内，搭建了中国投资顾问创业平台"财立方俱乐部"，通过向投资顾问提供专业、全面的培训支持和产品支持，惠及众多有创业热情的投资顾问及其有理财需求的客户人群，力求投顾、客户、展恒的"三赢"！</div>
+        <div class='con'>展恒官网：<a href="http://www.myfp.cn">http://www.myfp.cn</a><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;展恒基金网：<a href="http://www.myfund.com">http://www.myfund.com</a><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务邮箱：<a href="mailto:service@myfund.com">service@myfund.com</a></div>
+    </div>
+    <a href='javascript:;' class='btn' id='tel'>客服热线：400-818-8000</a>
+    
+    <script >
+		document.getElementById('tel').onclick = function(){
+		 //alert("useragent:"+window.navigator.userAgent);
+			window.iOS.showDetial('400-818-8000');
+		};
+    </script>
+</body>
+    
+</html>

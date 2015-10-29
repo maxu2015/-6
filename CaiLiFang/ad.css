@@ -1,0 +1,63 @@
+html, body, div, img, input, ul, li, ol, p {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: 100%;
+}
+body {
+    background: #eeeeee;
+}
+ul {
+    list-style: none;
+}
+em, i {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+.title {
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #959595;
+}
+.title li {
+    display: block;
+    float: left;
+    width: 25%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.title .hover {
+    color: #e43b2e;
+}
+.title .arrow {
+    width: 12.5%;
+    background: url(images/arrow.jpg) no-repeat center center;
+    background-size: 5.5px;
+}
+.ad_wrap img {
+    display: block;
+    width: 100%;
+}
+.btn_ad {
+    width: 230px;
+    height: 50px;
+    border-radius: 5px;
+    line-height: 50px;
+}
+a.btn_only, input.btn_only {
+    display: block;
+    width: 180px;
+    height: 35px;
+    margin: 0 auto;
+    background: #e43b2e;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    border: none;
+}

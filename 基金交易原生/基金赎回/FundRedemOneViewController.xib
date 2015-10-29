@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FundRedemOneViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="tHw-uU-ByR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="fiP-e7-ySt"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pr-Qu-1bz">
+                    <rect key="frame" x="0.0" y="21" width="45" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="HEB-Ga-3zi"/>
+                        <constraint firstAttribute="height" constant="44" id="KfJ-GA-MQb"/>
+                    </constraints>
+                    <state key="normal" image="返回按钮.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="returnButtonClick:" destination="-1" eventType="touchUpInside" id="LEF-ai-5mh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="基金赎回" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAA-1T-wSy">
+                    <rect key="frame" x="88" y="22" width="144" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="144" id="8UJ-TR-d5V"/>
+                        <constraint firstAttribute="height" constant="38" id="8k1-s3-15b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tHw-uU-ByR" secondAttribute="trailing" id="HPj-3p-3JJ"/>
+                <constraint firstItem="AAA-1T-wSy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="cmr-k0-lG5"/>
+                <constraint firstItem="3Pr-Qu-1bz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mxf-Pd-1en"/>
+                <constraint firstItem="tHw-uU-ByR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sFX-4W-ywK"/>
+                <constraint firstItem="AAA-1T-wSy" firstAttribute="centerX" secondItem="tHw-uU-ByR" secondAttribute="centerX" id="t2T-3k-M8b"/>
+                <constraint firstItem="tHw-uU-ByR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tjv-Lf-27Q"/>
+                <constraint firstItem="3Pr-Qu-1bz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="21" id="xKp-Xr-Pek"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="140" y="150"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar.png" width="320" height="44"/>
+        <image name="返回按钮.png" width="19" height="19"/>
+    </resources>
+</document>

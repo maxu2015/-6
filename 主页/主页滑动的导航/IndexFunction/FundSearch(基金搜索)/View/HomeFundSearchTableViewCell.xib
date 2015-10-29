@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeSearch" rowHeight="66" id="KGk-i7-Jjw" customClass="HomeFundSearchTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fundcode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24l-dI-YzO">
+                        <rect key="frame" x="3" y="26" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="0yx-Ry-XJM"/>
+                            <constraint firstAttribute="height" constant="21" id="my6-lf-aF8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fundName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFY-1P-Xvr">
+                        <rect key="frame" x="77" y="17" width="114" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="Fef-U3-XL5"/>
+                            <constraint firstAttribute="width" constant="114" id="X0T-rd-XvJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sN-4q-eTM">
+                        <rect key="frame" x="249" y="6" width="68" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="52" id="At9-6Y-duj"/>
+                            <constraint firstAttribute="width" constant="68" id="HIv-Dm-pai"/>
+                        </constraints>
+                        <state key="normal" image="icon_1.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="pressFundChooseBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1kE-nC-uPm"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fundtype" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RI-s2-mOR">
+                        <rect key="frame" x="199" y="26" width="66" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="4PY-RE-0X8"/>
+                            <constraint firstAttribute="width" constant="66" id="dSi-cP-yHM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="24l-dI-YzO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-5" id="EPb-g7-cHE"/>
+                    <constraint firstItem="PFY-1P-Xvr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="RqE-to-seY"/>
+                    <constraint firstItem="2RI-s2-mOR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="18" id="VFx-NI-isi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0sN-4q-eTM" secondAttribute="trailing" constant="-5" id="cXX-IA-xZh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2RI-s2-mOR" secondAttribute="trailing" constant="47" id="fe0-ky-JYH"/>
+                    <constraint firstItem="0sN-4q-eTM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-2" id="fjA-Hu-drg"/>
+                    <constraint firstItem="PFY-1P-Xvr" firstAttribute="leading" secondItem="24l-dI-YzO" secondAttribute="trailing" constant="6" id="oiu-IG-p09"/>
+                    <constraint firstItem="24l-dI-YzO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="18" id="y9c-gN-6wM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fundChooseBtn" destination="0sN-4q-eTM" id="9DC-an-siR"/>
+                <outlet property="fundNameLabel" destination="PFY-1P-Xvr" id="d6D-7r-2eU"/>
+                <outlet property="fundType" destination="2RI-s2-mOR" id="IFQ-Ff-pZU"/>
+                <outlet property="fundcodeLabel" destination="24l-dI-YzO" id="131-iR-JIf"/>
+            </connections>
+            <point key="canvasLocation" x="382" y="309"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_1.png" width="20" height="19"/>
+    </resources>
+</document>

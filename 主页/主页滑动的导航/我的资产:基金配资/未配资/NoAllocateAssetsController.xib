@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoAllocateAssetsController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8I-qg-GJR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="WvU-5Y-RsE">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="FO4-jz-eoD"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ij-m6-x0p">
+                            <rect key="frame" x="0.0" y="21" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="1AR-OT-200"/>
+                                <constraint firstAttribute="width" constant="45" id="OvR-1L-8mQ"/>
+                            </constraints>
+                            <state key="normal" image="返回按钮.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="fanhuianniu:" destination="-1" eventType="touchUpInside" id="8p3-s9-cZv"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="配资服务" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtc-RR-e5O">
+                            <rect key="frame" x="85" y="22" width="150" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="OZm-df-0cw"/>
+                                <constraint firstAttribute="height" constant="38" id="mkV-5N-TbP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WvU-5Y-RsE" firstAttribute="top" secondItem="Y8I-qg-GJR" secondAttribute="top" id="4Ar-hP-uaf"/>
+                        <constraint firstAttribute="height" constant="64" id="Sp5-5v-wS4"/>
+                        <constraint firstItem="Dtc-RR-e5O" firstAttribute="top" secondItem="Y8I-qg-GJR" secondAttribute="top" constant="22" id="fAr-XX-Dmm"/>
+                        <constraint firstAttribute="trailing" secondItem="WvU-5Y-RsE" secondAttribute="trailing" id="gUX-Aq-dC1"/>
+                        <constraint firstItem="5ij-m6-x0p" firstAttribute="leading" secondItem="Y8I-qg-GJR" secondAttribute="leading" id="iKs-fz-jV5"/>
+                        <constraint firstItem="5ij-m6-x0p" firstAttribute="top" secondItem="Y8I-qg-GJR" secondAttribute="top" constant="21" id="jjY-Vn-bJl"/>
+                        <constraint firstItem="Dtc-RR-e5O" firstAttribute="centerX" secondItem="WvU-5Y-RsE" secondAttribute="centerX" id="l3w-Xh-p0B"/>
+                        <constraint firstItem="WvU-5Y-RsE" firstAttribute="leading" secondItem="Y8I-qg-GJR" secondAttribute="leading" id="xdk-2x-Fal"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEp-9F-wYD">
+                    <rect key="frame" x="0.0" y="64" width="320" height="40"/>
+                    <color key="backgroundColor" red="0.88627450980392153" green="0.67450980392156867" blue="0.17647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="pQ3-m1-bHe"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="  ">
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="您还不是点融通会员">
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=",">
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="点此立即">
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name="STHeitiSC-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="加入">
+                            <attributes>
+                                <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name="STHeitiSC-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BE2-dr-Hph">
+                    <rect key="frame" x="241" y="69" width="30" height="30"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="jiaru:" destination="-1" eventType="touchUpInside" id="MZi-nn-jgA"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jijinpeizi" translatesAutoresizingMaskIntoConstraints="NO" id="Wlt-y5-mzK">
+                    <rect key="frame" x="10" y="107" width="300" height="177"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="177" id="Ajl-gA-5p6"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.93518124782539025" green="0.93726760375180307" blue="0.96910511363636365" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Wlt-y5-mzK" firstAttribute="top" secondItem="PEp-9F-wYD" secondAttribute="bottom" constant="3" id="8UA-S6-l4U"/>
+                <constraint firstItem="Y8I-qg-GJR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dpv-kb-LfX"/>
+                <constraint firstItem="PEp-9F-wYD" firstAttribute="top" secondItem="Y8I-qg-GJR" secondAttribute="bottom" id="XXB-SY-ds0"/>
+                <constraint firstAttribute="trailing" secondItem="Wlt-y5-mzK" secondAttribute="trailing" constant="10" id="ZfN-rQ-fLk"/>
+                <constraint firstItem="Y8I-qg-GJR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a1y-tG-7d5"/>
+                <constraint firstAttribute="trailing" secondItem="PEp-9F-wYD" secondAttribute="trailing" id="cR9-qL-ce0"/>
+                <constraint firstItem="PEp-9F-wYD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lmp-In-kR6"/>
+                <constraint firstAttribute="trailing" secondItem="Y8I-qg-GJR" secondAttribute="trailing" id="ozY-dy-tY6"/>
+                <constraint firstItem="Wlt-y5-mzK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="vNq-kq-3M4"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="246" y="146"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jijinpeizi" width="1196" height="366"/>
+        <image name="navBar.png" width="320" height="44"/>
+        <image name="返回按钮.png" width="19" height="19"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessViewController">
+            <connections>
+                <outlet property="message" destination="k9i-zd-Xn9" id="86F-2Z-ASt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Nb-6h-bMy">
+                    <rect key="frame" x="272" y="240" width="57" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="kqf-61-Zeq"/>
+                        <constraint firstAttribute="width" constant="57" id="oCg-YU-JuK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你已经成为点财通会员" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9i-zd-Xn9">
+                    <rect key="frame" x="171" y="290" width="258" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="258" id="H52-H4-oqM"/>
+                        <constraint firstAttribute="height" constant="21" id="hcP-68-beG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxh-Hc-aif">
+                    <rect key="frame" x="176" y="411" width="250" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="MoI-wv-Ke5"/>
+                        <constraint firstAttribute="height" constant="35" id="tyc-fw-icx"/>
+                    </constraints>
+                    <state key="normal" title="回到首页" backgroundImage="下一步背景.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sure:" destination="-1" eventType="touchUpInside" id="S5r-vS-zx7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="2Nb-6h-bMy" secondAttribute="centerX" id="GV1-Tl-MzJ"/>
+                <constraint firstAttribute="centerX" secondItem="k9i-zd-Xn9" secondAttribute="centerX" id="NHQ-My-LIu"/>
+                <constraint firstItem="Qxh-Hc-aif" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="1" id="R6l-zp-G5G"/>
+                <constraint firstItem="k9i-zd-Xn9" firstAttribute="top" secondItem="2Nb-6h-bMy" secondAttribute="bottom" constant="10" id="VFT-7L-byQ"/>
+                <constraint firstAttribute="centerX" secondItem="Qxh-Hc-aif" secondAttribute="centerX" id="bHw-Ph-NBg"/>
+                <constraint firstAttribute="centerY" secondItem="k9i-zd-Xn9" secondAttribute="centerY" id="dt7-I6-8TA"/>
+                <constraint firstItem="Qxh-Hc-aif" firstAttribute="top" secondItem="k9i-zd-Xn9" secondAttribute="bottom" constant="100" id="l84-Ql-wLj"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="bHw-Ph-NBg"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="下一步背景.png" width="304" height="40"/>
+    </resources>
+</document>

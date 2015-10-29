@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebPresentViewController">
+            <connections>
+                <outlet property="barTitle" destination="Kvf-xB-OHg" id="dRy-UR-Xzm"/>
+                <outlet property="customNavBar" destination="8DS-g1-GPy" id="x73-5v-w3J"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webLoad" destination="G98-c4-nwf" id="9l8-LR-QBi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" backIndicatorImage="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="8DS-g1-GPy">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="hOZ-Ik-ala"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="title" id="Kvf-xB-OHg">
+                            <barButtonItem key="leftBarButtonItem" title="返回" id="RJB-st-eBk">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="preeBackNavBarBtn:" destination="-1" id="pKM-EQ-Xi5"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G98-c4-nwf">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8DS-g1-GPy" secondAttribute="trailing" id="5Hu-A3-Eo2"/>
+                <constraint firstItem="G98-c4-nwf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N38-vf-ysR"/>
+                <constraint firstAttribute="bottom" secondItem="G98-c4-nwf" secondAttribute="bottom" id="ZYb-2e-tjB"/>
+                <constraint firstItem="8DS-g1-GPy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cWK-qz-jxH"/>
+                <constraint firstAttribute="trailing" secondItem="G98-c4-nwf" secondAttribute="trailing" id="g7C-aO-cyp"/>
+                <constraint firstItem="G98-c4-nwf" firstAttribute="top" secondItem="8DS-g1-GPy" secondAttribute="bottom" id="nh0-75-umV"/>
+                <constraint firstItem="8DS-g1-GPy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vpt-zD-T1I"/>
+            </constraints>
+            <point key="canvasLocation" x="154" y="314"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar.png" width="320" height="44"/>
+    </resources>
+</document>

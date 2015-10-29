@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="serveViewController">
+            <connections>
+                <outlet property="bgView" destination="Usz-hZ-eaE" id="jRW-O9-hLY"/>
+                <outlet property="titleLabel" destination="2eu-L6-aBr" id="uYw-9y-273"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="0hl-XT-TFe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="mgb-C2-WdH"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8O-Rb-Act">
+                    <rect key="frame" x="0.0" y="21" width="45" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="SCc-Ix-iWT"/>
+                        <constraint firstAttribute="width" constant="45" id="bx1-Ju-GgA"/>
+                    </constraints>
+                    <state key="normal" image="返回按钮.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="returnBtn:" destination="-1" eventType="touchUpInside" id="Sbg-J3-hxu"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务条款" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eu-L6-aBr">
+                    <rect key="frame" x="70" y="22" width="179" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="179" id="EW8-Js-RYB"/>
+                        <constraint firstAttribute="height" constant="38" id="KWl-6u-Bch"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Usz-hZ-eaE">
+                    <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2eu-L6-aBr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="DP8-ja-LNj"/>
+                <constraint firstItem="j8O-Rb-Act" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FWx-vw-QMK"/>
+                <constraint firstItem="0hl-XT-TFe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Itb-cr-IUs"/>
+                <constraint firstItem="2eu-L6-aBr" firstAttribute="centerX" secondItem="0hl-XT-TFe" secondAttribute="centerX" id="LWg-0K-UvK"/>
+                <constraint firstItem="Usz-hZ-eaE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lgi-03-txt"/>
+                <constraint firstItem="j8O-Rb-Act" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="21" id="eCe-N0-0nY"/>
+                <constraint firstItem="0hl-XT-TFe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="n5L-za-8gz"/>
+                <constraint firstAttribute="trailing" secondItem="0hl-XT-TFe" secondAttribute="trailing" id="p4q-pC-bbl"/>
+                <constraint firstAttribute="bottom" secondItem="Usz-hZ-eaE" secondAttribute="bottom" id="qus-GL-pGU"/>
+                <constraint firstItem="Usz-hZ-eaE" firstAttribute="top" secondItem="2eu-L6-aBr" secondAttribute="bottom" id="rp2-O2-Hbu"/>
+                <constraint firstAttribute="trailing" secondItem="Usz-hZ-eaE" secondAttribute="trailing" id="tDX-AA-FGo"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar.png" width="320" height="44"/>
+        <image name="返回按钮.png" width="19" height="19"/>
+    </resources>
+</document>

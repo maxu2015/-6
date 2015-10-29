@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RiskExplainViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="fkq-Az-1UL">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="MzO-Ga-6no"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZg-wq-2QZ">
+                    <rect key="frame" x="0.0" y="21" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="1nM-ss-nBI"/>
+                        <constraint firstAttribute="height" constant="45" id="YKJ-1X-d7u"/>
+                    </constraints>
+                    <state key="normal" image="返回按钮.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBack:" destination="-1" eventType="touchUpInside" id="QDU-Ad-UFX"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGK-DT-6C6">
+                    <rect key="frame" x="8" y="82" width="304" height="355"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">1  波动幅度：越小越平稳，风险越小。波动幅度，即标准差，基金增长率的波动情况，也是平均涨跌幅度的变化
+
+2  贝塔系数：小于1，风险愈小。因为贝塔系数是衡量基金报酬率与相对指数报酬率的敏感程度,譬如全体市场的贝塔系数为1,那么指数型基金，其β系数就是1；若基金净值的波动大于1,表示该基金的波动风险高过整体市场；
+
+3  相关系数：代表和大盘的相关性，如果是1，表示和大盘完全相关</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="风险指标" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6C-is-5aK">
+                    <rect key="frame" x="103" y="22" width="115" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="115" id="L51-Sb-y0c"/>
+                        <constraint firstAttribute="height" constant="38" id="k6M-To-rv7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mZg-wq-2QZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0yH-hp-JQp"/>
+                <constraint firstItem="PGK-DT-6C6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="4J3-dW-Jrr"/>
+                <constraint firstAttribute="trailing" secondItem="fkq-Az-1UL" secondAttribute="trailing" id="KWW-ty-sHJ"/>
+                <constraint firstItem="fkq-Az-1UL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TvJ-wo-jNc"/>
+                <constraint firstItem="PGK-DT-6C6" firstAttribute="top" secondItem="mZg-wq-2QZ" secondAttribute="bottom" constant="16" id="bPS-Jn-ihP"/>
+                <constraint firstItem="Y6C-is-5aK" firstAttribute="centerX" secondItem="fkq-Az-1UL" secondAttribute="centerX" id="jkd-60-8MM"/>
+                <constraint firstItem="mZg-wq-2QZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="21" id="nUm-p6-G2Z"/>
+                <constraint firstItem="fkq-Az-1UL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="peW-rx-VFW"/>
+                <constraint firstItem="Y6C-is-5aK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="s6J-uB-Wfs"/>
+                <constraint firstAttribute="bottom" secondItem="PGK-DT-6C6" secondAttribute="bottom" constant="131" id="wgj-dF-0kW"/>
+                <constraint firstAttribute="trailing" secondItem="PGK-DT-6C6" secondAttribute="trailing" constant="8" id="xiG-8p-mfM"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar.png" width="320" height="44"/>
+        <image name="返回按钮.png" width="19" height="19"/>
+    </resources>
+</document>

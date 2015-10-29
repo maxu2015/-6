@@ -1,0 +1,88 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "NSError+NetworkError.h"
+#import "Service.h"
+#import "GlobalConfig.h"
+
+
+
+//http://sms.myfund.com:8000/
+#define IMAGE_PREFIX @"http://www.myfund.com"
+
+#define  SIMU_AND_GONGMU_URL    @"http://app.myfund.com:8585/"
+
+#define TAO_COMPUTER_ID    @"https://apptrade.myfund.com:8383/"//http://sms.myfund.com:8000/
+#define ZHServerAddress      TAO_COMPUTER_ID  //@"https://apptrade.myfund.com:8383/"
+#ifdef DEBUG
+# define YYLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define YYLog(...)
+#endif
+
+#define FUNDPUSH @"fund"
+#define STUDYPUSH @"study"
+
+//用户名/手机号
+#define USERINFM @"userInformation"
+//记录上次登录时输入的电话号或者用户名
+#define USERPHONE @"userPhone"
+//存储用户名  保证不能是手机号
+#define USERNICKNAME @"userNickName"
+//存储手机号  保证不是用户名
+#define USEROHONENUM @"userPhoneNum"
+
+#define USERPHONEARRAY @"userPhoneArray"
+
+//存储登陆过的用户名  是一个数组
+#define USERNAMEARRAY @"userNameArray"
+
+//存储推送过来的消息
+#define NOTIFICATIONNEWS @"notificationNews"
+
+//存储launchOptions
+#define SAVELAUNCHOPTIONS @"savelaunchOptions"
+
+//本地服务器地址
+#define  LOCAL_URL   @"http://app.myfund.com:8484/"//@"http://app.myfund.com:8484/"
+
+//我的服务/资产
+#define GZAPI @"https://apptrade.myfund.com:8383/appweb/ws/webapp-clientspace/getFloat?idcard="
+
+//我的资产/固收->持有的固收
+#define ChiYouGuShou @"http://app.myfund.com:8484/Service/MyfundDemo.svc/GetHoldfixList?sdzjnumber=%@"
+
+//我的资产/固收->购买记录
+#define GMJL         @"http://app.myfund.com:8484/Service/MyfundDemo.svc/GetHoldfixList1?sdzjnumber="
+
+//判断是否时点财通会员
+#define IFHuiYuan @"https://apptrade.myfund.com:8383/appweb/ws/webapp-clientspace/checkIsMember?idcard="
+
+//持有/交易记录的->交易记录
+#define JYJL   @"http://app.myfund.com:8484/Service/MyfundDemo.svc/GetPrivateproductsList1?sdzjnumber="
+
+//持有/交易记录->持有
+#define ChiYou @"http://app.myfund.com:8484/Service/MyfundDemo.svc/GetPrivateproductsList?sdzjnumber="
+
+//存储身份证 7
+#define IDENTITY_CARD  @"identityCard"
+#define device_is_iphone_5 ([UIScreen instancesRespondToSelector:@selector(currentMode)]?CGSizeEqualToSize(CGSizeMake(640,1136),[[UIScreen mainScreen] currentMode].size):NO)
+
+#define jojo ([[UIDevice currentDevice].systemVersion floatValue])>=8.0
+
+#import "ProgressHUD.h"
+
+#import "Service.h"
+#endif

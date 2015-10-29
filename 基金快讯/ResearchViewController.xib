@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResearchViewController">
+            <connections>
+                <outlet property="button1" destination="BwK-9X-qgb" id="BA7-Zw-4lh"/>
+                <outlet property="button2" destination="oTi-N3-irF" id="Jr0-uA-jhP"/>
+                <outlet property="button3" destination="7zO-GX-HCk" id="2da-4a-us2"/>
+                <outlet property="button4" destination="LVe-Vw-mEa" id="3BU-ZO-Sbn"/>
+                <outlet property="headView" destination="KKS-a0-tkZ" id="Tls-wW-PPK"/>
+                <outlet property="reserchTableView" destination="ihx-we-DIU" id="uSn-2Q-gea"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KKS-a0-tkZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwK-9X-qgb">
+                            <rect key="frame" x="0.0" y="0.0" width="79" height="46"/>
+                            <state key="normal" title="专题文章">
+                                <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTi-N3-irF">
+                            <rect key="frame" x="87" y="0.0" width="79" height="46"/>
+                            <state key="normal" title="宏观策略">
+                                <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zO-GX-HCk">
+                            <rect key="frame" x="165" y="0.0" width="79" height="46"/>
+                            <state key="normal" title="经济策略">
+                                <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVe-Vw-mEa">
+                            <rect key="frame" x="241" y="0.0" width="79" height="46"/>
+                            <state key="normal" title="投资策略">
+                                <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ihx-we-DIU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ihx-we-DIU" secondAttribute="trailing" id="CBj-ym-XPp"/>
+                <constraint firstItem="ihx-we-DIU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="M1k-57-BqP"/>
+                <constraint firstAttribute="bottom" secondItem="ihx-we-DIU" secondAttribute="bottom" id="US2-QM-Tey"/>
+                <constraint firstItem="ihx-we-DIU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="d5v-dD-AWr"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

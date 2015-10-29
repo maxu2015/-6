@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoHousekeeperController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZL3-24-jHh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="RFE-Mo-JmP">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="CJG-iW-h5e"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的资产-管家通会员" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN7-04-E6V">
+                            <rect key="frame" x="86" y="22" width="203" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="R2S-qJ-iKM"/>
+                                <constraint firstAttribute="width" constant="203" id="WFM-jy-nl7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.99165482954545459" green="0.99165482954545459" blue="0.99165482954545459" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNR-xH-FTd">
+                            <rect key="frame" x="0.0" y="20" width="60" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="9O2-yl-BNc"/>
+                                <constraint firstAttribute="height" constant="44" id="Cpa-T6-aAJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="返回">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="fanhui:" destination="-1" eventType="touchUpInside" id="pgH-cg-ayS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="gN7-04-E6V" firstAttribute="centerX" secondItem="RFE-Mo-JmP" secondAttribute="centerX" id="4mg-dK-yf9"/>
+                        <constraint firstItem="gN7-04-E6V" firstAttribute="top" secondItem="ZL3-24-jHh" secondAttribute="top" constant="22" id="CfO-Iw-3dP"/>
+                        <constraint firstItem="RFE-Mo-JmP" firstAttribute="top" secondItem="ZL3-24-jHh" secondAttribute="top" id="DzC-sG-QhS"/>
+                        <constraint firstItem="RFE-Mo-JmP" firstAttribute="leading" secondItem="ZL3-24-jHh" secondAttribute="leading" id="GRF-0c-Vg5"/>
+                        <constraint firstItem="JNR-xH-FTd" firstAttribute="leading" secondItem="ZL3-24-jHh" secondAttribute="leading" id="SJ1-p9-x9s"/>
+                        <constraint firstAttribute="trailing" secondItem="RFE-Mo-JmP" secondAttribute="trailing" id="a8G-DQ-1oT"/>
+                        <constraint firstAttribute="height" constant="64" id="ecM-fE-Rbe"/>
+                        <constraint firstItem="JNR-xH-FTd" firstAttribute="top" secondItem="ZL3-24-jHh" secondAttribute="top" constant="20" id="w9A-bE-eiR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97481202752270768" green="0.96889669560292113" blue="0.9995857007575758" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ZL3-24-jHh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qac-jn-Zfv"/>
+                <constraint firstItem="ZL3-24-jHh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aFa-K0-kos"/>
+                <constraint firstAttribute="trailing" secondItem="ZL3-24-jHh" secondAttribute="trailing" id="aHK-js-28d"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="457.5" y="309.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar.png" width="320" height="44"/>
+    </resources>
+</document>

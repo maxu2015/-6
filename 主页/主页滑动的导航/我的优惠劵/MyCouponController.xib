@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCouponController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVX-hA-C5H">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="C0T-jC-0wC">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="320" id="MRb-xt-OY8"/>
+                                <constraint firstAttribute="height" constant="64" id="imw-x5-hFF"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTE-dR-BTD">
+                            <rect key="frame" x="0.0" y="21" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="FfS-Mx-3gP"/>
+                                <constraint firstAttribute="height" constant="44" id="zmK-Ki-M5z"/>
+                            </constraints>
+                            <state key="normal" image="返回按钮.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="fanhui:" destination="-1" eventType="touchUpInside" id="X8n-K7-47Q"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的优惠劵" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qx5-9D-5ib">
+                            <rect key="frame" x="85" y="22" width="150" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="0mC-8h-dcC"/>
+                                <constraint firstAttribute="width" constant="150" id="9iC-jg-ofu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="3jj-bG-zoa"/>
+                        <constraint firstAttribute="bottom" secondItem="C0T-jC-0wC" secondAttribute="bottom" id="F0p-ZP-3wy"/>
+                        <constraint firstItem="C0T-jC-0wC" firstAttribute="leading" secondItem="hVX-hA-C5H" secondAttribute="leading" id="HJg-D6-3KC"/>
+                        <constraint firstItem="qx5-9D-5ib" firstAttribute="centerX" secondItem="C0T-jC-0wC" secondAttribute="centerX" id="HZK-Bg-tmz"/>
+                        <constraint firstItem="QTE-dR-BTD" firstAttribute="leading" secondItem="hVX-hA-C5H" secondAttribute="leading" id="OHd-cQ-kwb"/>
+                        <constraint firstAttribute="trailing" secondItem="C0T-jC-0wC" secondAttribute="trailing" id="be8-hq-TQ0"/>
+                        <constraint firstItem="QTE-dR-BTD" firstAttribute="top" secondItem="hVX-hA-C5H" secondAttribute="top" constant="21" id="hw6-an-7U7"/>
+                        <constraint firstItem="C0T-jC-0wC" firstAttribute="top" secondItem="hVX-hA-C5H" secondAttribute="top" id="jD4-nX-xhR"/>
+                        <constraint firstItem="qx5-9D-5ib" firstAttribute="top" secondItem="hVX-hA-C5H" secondAttribute="top" constant="22" id="ps0-ho-Rj2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ac7-cE-hPQ">
+                    <rect key="frame" x="0.0" y="64" width="320" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUK-20-nqf">
+                            <rect key="frame" x="5" y="5" width="150" height="30"/>
+                            <state key="normal" title="优惠劵" backgroundImage="navBar.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5b-Pa-lUR">
+                            <rect key="frame" x="163" y="5" width="150" height="30"/>
+                            <state key="normal" title="抢劵" backgroundImage="navBar.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196078431372551" green="0.89411764705882346" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="vUK-20-nqf"/>
+                            <exclude reference="G5b-Pa-lUR"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.90196078431372551" green="0.89411764705882346" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="hVX-hA-C5H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IXu-NU-wsS"/>
+                <constraint firstAttribute="trailing" secondItem="hVX-hA-C5H" secondAttribute="trailing" id="YXp-oq-LJ4"/>
+                <constraint firstItem="hVX-hA-C5H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="v6g-zh-awh"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="349" y="156"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar.png" width="320" height="44"/>
+        <image name="返回按钮.png" width="19" height="19"/>
+    </resources>
+</document>

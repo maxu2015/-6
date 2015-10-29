@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FundBuyThridViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="gM4-6g-9bZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="ch6-MA-8aW"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppk-PZ-V1u">
+                    <rect key="frame" x="0.0" y="21" width="45" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="nYB-TW-BgG"/>
+                        <constraint firstAttribute="height" constant="44" id="yFr-JX-9QZ"/>
+                    </constraints>
+                    <state key="normal" image="返回按钮.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="NacBack:" destination="-1" eventType="touchUpInside" id="1cE-fw-8kh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的基金买入下单成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJ7-X9-XuE">
+                    <rect key="frame" x="50" y="22" width="220" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="lEu-Hx-ut2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DJ7-X9-XuE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="5le-Xv-gp3"/>
+                <constraint firstItem="gM4-6g-9bZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7a2-9C-emt"/>
+                <constraint firstItem="DJ7-X9-XuE" firstAttribute="leading" secondItem="ppk-PZ-V1u" secondAttribute="trailing" constant="5" id="Trs-tu-17v"/>
+                <constraint firstAttribute="trailing" secondItem="gM4-6g-9bZ" secondAttribute="trailing" id="Xba-Pj-zYU"/>
+                <constraint firstItem="ppk-PZ-V1u" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fuR-5p-l73"/>
+                <constraint firstItem="DJ7-X9-XuE" firstAttribute="centerX" secondItem="gM4-6g-9bZ" secondAttribute="centerX" id="pzv-8i-WeQ"/>
+                <constraint firstItem="ppk-PZ-V1u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="21" id="vUF-dO-dh9"/>
+                <constraint firstItem="gM4-6g-9bZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x3Y-6q-PBs"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar.png" width="320" height="44"/>
+        <image name="返回按钮.png" width="19" height="19"/>
+    </resources>
+</document>

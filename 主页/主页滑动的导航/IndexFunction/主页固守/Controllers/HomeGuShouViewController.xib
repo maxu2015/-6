@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeGuShouViewController">
+            <connections>
+                <outlet property="table" destination="ARl-jr-GTE" id="jvM-I2-6Lz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="固定收益产品，100%本息保障" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xf-am-PsG">
+                    <rect key="frame" x="0.0" y="75" width="375" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="raz-pe-IDJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="固收专线：010-56236260" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sA6-Bj-Ats">
+                    <rect key="frame" x="82" y="615" width="184" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ARl-jr-GTE">
+                    <rect key="frame" x="0.0" y="132" width="375" height="490"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GxX-LC-ct9"/>
+                        <outlet property="delegate" destination="-1" id="yeA-SH-gjU"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvv-ZB-esl">
+                    <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="uRz-7G-KJk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="固收专线：010-56236260">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pressPhoneBtn:" destination="-1" eventType="touchUpInside" id="uTl-6o-bdh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="zvv-ZB-esl" firstAttribute="top" secondItem="ARl-jr-GTE" secondAttribute="bottom" id="8Qh-Ko-NSI"/>
+                <constraint firstItem="3xf-am-PsG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="75" id="J1v-7D-N0a"/>
+                <constraint firstAttribute="trailing" secondItem="3xf-am-PsG" secondAttribute="trailing" id="K7u-0C-FIb"/>
+                <constraint firstAttribute="trailing" secondItem="ARl-jr-GTE" secondAttribute="trailing" id="PbW-HU-Mjn"/>
+                <constraint firstItem="ARl-jr-GTE" firstAttribute="top" secondItem="3xf-am-PsG" secondAttribute="bottom" id="RGs-Vq-geU"/>
+                <constraint firstItem="zvv-ZB-esl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RQh-GH-dYX"/>
+                <constraint firstAttribute="bottom" secondItem="zvv-ZB-esl" secondAttribute="bottom" id="cfm-cJ-gwE"/>
+                <constraint firstAttribute="trailing" secondItem="zvv-ZB-esl" secondAttribute="trailing" id="g9I-ft-QVe"/>
+                <constraint firstItem="ARl-jr-GTE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mWN-Gn-L2n"/>
+                <constraint firstItem="3xf-am-PsG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="owv-ac-MrR"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="sA6-Bj-Ats"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

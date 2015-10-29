@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoProductViewController">
+            <connections>
+                <outlet property="table" destination="pP2-70-TUR" id="QfF-oW-NQ7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="持有固收将在产品募集成功后7个工作日内显示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lU-xi-X8r">
+                    <rect key="frame" x="0.0" y="8" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="snz-6I-7rL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pP2-70-TUR">
+                    <rect key="frame" x="0.0" y="81" width="375" height="586"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GEA-Lh-QyN"/>
+                        <outlet property="delegate" destination="-1" id="hih-6J-EMs"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31e-B5-ipy">
+                    <rect key="frame" x="0.0" y="37" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未购买固收类产品" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2e-2D-fAl">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="wC2-Zi-mMq"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="阴影无白边.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fml-ZM-qhF">
+                            <rect key="frame" x="0.0" y="43" width="375" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="95h-EK-J4U"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Fml-ZM-qhF" secondAttribute="trailing" id="3cD-0X-xrM"/>
+                        <constraint firstItem="Fml-ZM-qhF" firstAttribute="leading" secondItem="31e-B5-ipy" secondAttribute="leading" id="VLN-tO-rgv"/>
+                        <constraint firstItem="Fml-ZM-qhF" firstAttribute="top" secondItem="l2e-2D-fAl" secondAttribute="bottom" constant="1" id="WKB-ic-T7H"/>
+                        <constraint firstAttribute="height" constant="44" id="Zc5-Qm-uwg"/>
+                        <constraint firstAttribute="trailing" secondItem="l2e-2D-fAl" secondAttribute="trailing" id="n0V-K4-AMu"/>
+                        <constraint firstItem="l2e-2D-fAl" firstAttribute="top" secondItem="31e-B5-ipy" secondAttribute="top" id="pXy-3F-J3y"/>
+                        <constraint firstItem="l2e-2D-fAl" firstAttribute="leading" secondItem="31e-B5-ipy" secondAttribute="leading" id="tTk-9C-UdK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.94117647058823528" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0lU-xi-X8r" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4On-U0-Vzs"/>
+                <constraint firstItem="31e-B5-ipy" firstAttribute="top" secondItem="0lU-xi-X8r" secondAttribute="bottom" constant="8" id="ESO-uk-WB9"/>
+                <constraint firstItem="31e-B5-ipy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FI9-IH-g6G"/>
+                <constraint firstAttribute="trailing" secondItem="pP2-70-TUR" secondAttribute="trailing" id="X3M-2z-Uo4"/>
+                <constraint firstAttribute="bottom" secondItem="pP2-70-TUR" secondAttribute="bottom" id="YuN-ga-cK1"/>
+                <constraint firstAttribute="trailing" secondItem="31e-B5-ipy" secondAttribute="trailing" id="g7j-bt-wvg"/>
+                <constraint firstAttribute="trailing" secondItem="0lU-xi-X8r" secondAttribute="trailing" id="kMi-tb-FrH"/>
+                <constraint firstItem="pP2-70-TUR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lDm-Ya-xC0"/>
+                <constraint firstItem="0lU-xi-X8r" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="u7L-Q3-BO3"/>
+                <constraint firstItem="pP2-70-TUR" firstAttribute="top" secondItem="31e-B5-ipy" secondAttribute="bottom" id="zbZ-Kc-H5G"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="412.5" y="322.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="阴影无白边.png" width="320" height="1"/>
+    </resources>
+</document>

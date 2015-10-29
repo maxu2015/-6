@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FundRevokeViewController">
+            <connections>
+                <outlet property="fundTableView" destination="83p-El-P66" id="J5M-hh-eNI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="jTq-Tt-mS2">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="dWZ-DE-ZPZ"/>
+                        <constraint firstAttribute="height" constant="64" id="qv8-vv-230"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="基金交易撤单" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pu-rz-sLl">
+                    <rect key="frame" x="80" y="22" width="160" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="mbT-Db-YtR"/>
+                        <constraint firstAttribute="width" constant="160" id="uR6-nH-GBj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="83p-El-P66">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JVd-lq-hDm"/>
+                        <outlet property="delegate" destination="-1" id="bMC-tQ-TG3"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yd8-Ft-9Ks">
+                    <rect key="frame" x="0.0" y="21" width="45" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="lnF-YB-eWF"/>
+                        <constraint firstAttribute="width" constant="45" id="pfl-mw-A3O"/>
+                    </constraints>
+                    <state key="normal" image="返回按钮.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="NacBack:" destination="-1" eventType="touchUpInside" id="QPR-bx-Goc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="83p-El-P66" secondAttribute="trailing" id="3am-6R-p1V"/>
+                <constraint firstItem="9pu-rz-sLl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="5IV-lL-cek"/>
+                <constraint firstItem="Yd8-Ft-9Ks" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="21" id="DnV-lD-Mc8"/>
+                <constraint firstItem="jTq-Tt-mS2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E8i-pY-fk4"/>
+                <constraint firstItem="83p-El-P66" firstAttribute="top" secondItem="jTq-Tt-mS2" secondAttribute="bottom" id="HoU-Xd-tim"/>
+                <constraint firstAttribute="trailing" secondItem="jTq-Tt-mS2" secondAttribute="trailing" id="MU5-Mp-IQY"/>
+                <constraint firstAttribute="bottom" secondItem="83p-El-P66" secondAttribute="bottom" id="QjT-EG-8HP"/>
+                <constraint firstItem="9pu-rz-sLl" firstAttribute="centerX" secondItem="jTq-Tt-mS2" secondAttribute="centerX" id="SM7-8Z-XnM"/>
+                <constraint firstItem="83p-El-P66" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hxx-wj-qq5"/>
+                <constraint firstItem="Yd8-Ft-9Ks" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lKU-eM-0eD"/>
+                <constraint firstItem="jTq-Tt-mS2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xCG-Dg-0pr"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar.png" width="320" height="44"/>
+        <image name="返回按钮.png" width="19" height="19"/>
+    </resources>
+</document>
